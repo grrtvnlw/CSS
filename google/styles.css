@@ -31,7 +31,7 @@ body * {
 
 .logo-img {
     display: flex;
-    height: 95%;
+    height: 90%;
     max-width: 60%;
     align-items: center;
 }
@@ -72,7 +72,7 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 20%;
+    height: 15%;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -91,7 +91,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     height: 70%;
-    width: 40%;
+    width: 42.5%;
     border-radius: 25px;
     border: 1px solid #ccc;
 }
@@ -108,6 +108,7 @@ input:focus {
     height: 40%;
     width: 100%;
     /* border: 1px solid green; */
+    padding-top: 10px;
 }
 
  input[type="submit"] {
@@ -152,13 +153,11 @@ input:focus {
 .left,
 .right {
     padding: 20px;
-    /* border: 1px solid red; */
 }
 
 .left-nav,
 .right-nav {
     padding: 15px;
-    /* border: 1px solid red; */
 }
 
 .left-nav > a,
@@ -166,6 +165,12 @@ input:focus {
     margin-left: 8px;
     margin-right: 8px;
     font-size: 12px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 a {
@@ -183,8 +188,8 @@ a:hover {
 
 .apps {
     display: inline-block;
-    height: 6%;
-    width: 6%;
+    height: 50%;
+    width: 50%;
 }
 
 .sign-in {
