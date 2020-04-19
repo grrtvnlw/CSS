@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medium Blog Layout</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="nav-left"></div>
+            <div class="nav-center">
+                <img src="blog-logo.png" alt="Medium blog logo" class="blog-logo">
+            </div>
+            <div class="nav-right">
+                <a href="https://twitter.com/grrtvnlw" target="_blank">Follow</a>
+                <a href="https://medium.com/" target="_blank">Sign in / Sign up</a>
+                <img src="icon-search.svg" alt="Search magnifying glass" class="search">
+            </div>
+        </header>
+        <main class="blog">
+            <div class="blog-content">
+                <div class="author">
+                    <img src="profile-icon.png" alt="Picture of TJ Holowaychuk" class="profile-pic">
+                    <ul>
+                        <li>TJ Holowaychuk <a href="https://twitter.com/tjholowaychuk" target="_blank">Follow</a></li>
+                        <li>Code. Photography. Art.</li>
+                        <li>June 16 &#8226 7 min read</li>
+                    </ul>
+                </div>
+                <section class="post">
+                    <h1>Introducing Apex Ping</h1>
+                    <p>I'd like to introduce <a href="https://apex.sh/ping/" target="_blank">Apex Ping</a>! A minimalistic, but powerful uptime & 
+                        performance monitoring service for websites and APIs.  In this post I'll cover 
+                        features of Apex Ping, why I chose to build it first, and a few things I learned
+                        in the process. In future posts I'll be detailing the implementation for anyone 
+                        who is curious.
+                    </p>
+                    <p>
+                        I soft-launched Ping about a month ago, built almost 100% on AWS Lambda,
+                        with 500 users it has already detected over a million errors, and performed
+                        over 25 million checks. Big thanks to the early adopters who have checked it 
+                        out!
+                    </p>
+                    <img src="image1.png" alt="Graphical data from GitHub." class="image1">
+                    <figcaption class="elipse"><span>&#8226 </span><span>&#8226 </span><span>&#8226</span></figcaption>
+                    <h2>The product</h2>
+                    <p>
+                        I've seen first-hand how embarassing it can be when customers find out 
+                        your product is having issues before you do, naturally this can translate to
+                        customers bailing on your product. Ensuring you site, app, or API is stable
+                        and performant is critical.
+                    </p>
+                    <p>
+                        Apex Ping helps by making sure your team is notified when there's a 
+                        performance regression, or when your end-point is down or unresponsive.
+                        Often people rely on "it works for me", but Apex Ping's reporting can help
+                        uncover the full story.
+                    </p>
+                    <h3>Powerful monitoring</h3>
+                    <p>
+                        Unlike some other uptime monitoring services, which only support HEAD 
+                        requests, Apex Ping support header fields and bodies as well. This allows
+                        you to test APIs, caching behaviour, and serving time, as well as the typical
+                        connection latency.
+                    </p>
+                    <p>
+                        The checks listing displays the uptime, mean response, Apdex score, and
+                        Apdex score throughout the day, week, or month. The <a href="https://en.wikipedia.org/wiki/Apdex" target="_blank">Apdex</a> score
+                        generalizes the user experience, summarizing response time satisfaction and 
+                        error responses.
+                    </p>
+                    <img src="image2.png" alt="Uptime, Mean, and Apdex numbers." class="image2">
+                    <figcaption>Checks overview</figcaption>
+                    <h3>Global checks</h3>
+                    <p>
+                        Requests or "checks" are performed from a number of selectable PoPs (Point 
+                        of Presence), giving you a glance at the customer experience all over the 
+                        world. Hovering a PoP provides you with the breakdown, and coloring
+                        indicates their relative health so you can instantly see if a region's
+                        availability or performance is degraded.
+                    </p>
+                    <img src="image3.png" alt="Geographical data." class="image3">
+                    <figcaption>Geographical view</figcaption>
+                    <h3>Latency distribution</h3>
+                    <p>
+                        When latency is a reflection of the user-experience, it's important not to
+                        ignore the outliers. The Latency view provides yoiu with an intuitive look at
+                        distribution throughout the selected time period, where the intensity of the 
+                        heatmap represents the number of check's within the given duration.
+                    </p>
+                    <img src="image4.png" alt="Latency heatmap distribution." class="image4">
+                    <figcaption>Latency heatmap</figcaption>
+                    <h3>Errors & Apdex</h3>
+                    <p>
+                        The <a href="https://en.wikipedia.org/wiki/Apdex" target="_blank">Apdex</a> (Application Performance Index) score quantifies the user-experience
+                        based on a configured target latency. It effectively lets you know
+                        how far you are from hitting your mark, you should strive for a perfect 1.0!
+                    </p>
+                    <img src="image5.png" alt="Apdex measures and errors report." class="image4">
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
