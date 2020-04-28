@@ -8,3 +8,19 @@ body {
 body {
   box-sizing: inherit;
 }
+
+form:invalid {
+  border: 3px solid red;
+}
+
+/* textarea:invalid {
+  border: 3px solid red;
+} */
+
+textarea:valid {
+  border: 3px solid green;
+}
+
+.invalid-feedback:invalid {
+  display: none;
+}
