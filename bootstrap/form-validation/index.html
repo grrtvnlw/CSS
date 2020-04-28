@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <form action="" class="was-validated mt-5">
+    <form action="" class="was-validated mt-5 p-3">
       <div class="form-group">
         <label for="Username" class="mb-1 font-weight-bold">Username</label>
         <input type="text" class="form-control" id="Username" placeholder="Username" title="Name" minlength="5" required>
@@ -42,7 +42,7 @@
       </div>
       <div class="form-group">
         <label for="About Me" class="mb-1 font-weight-bold">About Me</label>
-        <textarea type="textarea" class="form-control" id="About Me" placeholder="Tell us a little about yourself" minlength="0" maxlength="250" title="About Me" required></textarea>
+        <textarea type="textarea" class="form-control" id="About Me" placeholder="Tell us a little about yourself" minlength="" maxlength="250" title="About Me" required></textarea>
         <div class="invalid-feedback">
           Please use less than 250 characters.
         </div>
@@ -50,6 +50,14 @@
           Looks good!
         </div>
       </div>
+      <label for="robotCheck" class="mb-1 font-weight-bold border border-dark border-rounded p-3" id="check">I am not a robot</label>
+        <input type="text" class="form-control" id="robotCheck" placeholder="" title="robotCheck" pattern="I am not a robot" required>
+        <div class="invalid-feedback">
+          Verify that you are not a robot. Match the text above.
+        </div>
+        <div class="valid-feedback">
+          Not a robot!
+        </div>
       <div class="input-group">
         <input type="submit" class="btn btn-dark mt-2 mx-auto">
       </div>
